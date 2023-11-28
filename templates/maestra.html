@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Poner un block para que luego pueda ser remplazado en las siguientes plantillas; lo mismo con el  block contenido-->
+    <title>Financiaapp</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <style>
+        html {
+            background-color: #add8e6;
+        }
+
+
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            float: center;
+            text-align: center;
+        }
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #023e8a;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #03045e;
+            font-weight: bold;
+        }
+
+        #app {
+            width: 10%;
+            height: 150px;
+            padding: 10px;
+        }
+
+        .contenido {
+            background-color: #ade8f4;
+            width: 100%;
+            height: 700px;
+            border: 2px #ade8f4;
+            padding: 50px;
+        }
+
+        #contenidox {
+            background-color: rgb(155, 215, 245);
+            height: 430px;
+            padding: 50px;
+        }
+
+        #casa {
+            border: 1px solid #2e518b;
+            /*anchura, estilo y color borde*/
+            padding: 10px;
+            /*espacio alrededor texto*/
+            background-color: #2e518b;
+            /*color botón*/
+            color: #ffffff;
+            /*color texto*/
+            text-decoration: none;
+            /*decoración texto*/
+            text-transform: uppercase;
+            /*capitalización texto*/
+            font-family: 'Helvetica', sans-serif;
+            /*tipografía texto*/
+            border-radius: 10px;
+            /*bordes redondos*/
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <!-- Menu -->
+        <div>
+            <ul>
+                <li><a href="../index.html" class="hidden-md-up">
+                        <ul class="contact-options">
+                            <li><img src="https://github.com/Lainix/Financiaap/blob/main/casa-icono-silueta.png?raw=true" width="20" height="20" alt="Inicio"></li>
+                        </ul>
+                    </a></li>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../templates/juegos.html">Presupuestos</a></li>
+                <li><a href="../faq.html">FAQ</a></li>
+                <li><a href="../valoracion.html">Valoración</a></li>
+                <li><a href="../marcas.html">Marcas</a></li>
+                <li><a href="../consejos.html">Consejos Financieros</a></li>
+                <li><a href="../videos.html">Vídeos</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    {%block contenido %} {% endblock %}
+</body>
+
+</html>
